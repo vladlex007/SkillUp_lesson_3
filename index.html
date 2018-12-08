@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Домашнее задание №2</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Домашнее задание №2</h1>
+        <hr>
+        <h3 align="center">Задачи:</h3>
+        <div class="main_block_of_table">
+            <ol class="home_work_ol">
+                <li>Создать форму Ввода
+                    <ul>
+                        <li>Использовать трибут form</li>
+                        <li>Метод action по умолчанию</li>
+                    </ul>
+                </li>
+                <li>Задать 5 парамметров для ввода
+                    <ul>
+                        <li>Конструкция на любой выбор</li>
+                        <li>Выбор type любой</li>
+                    </ul>
+                </li>
+                <li>Функция со смыслом
+                    <ul>
+                        <li>Форма в одной тематике</li>
+                        <li>Стили любые</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <hr>
+    </header>
+    <div class="above_bubbles">
+        <div class="background_bubbles">
+            <div class="bubble_all" id="bubble_1"></div>
+            <div class="bubble_all" id="bubble_2"></div>
+            <div class="bubble_all" id="bubble_3"></div>
+            <div class="bubble_all" id="bubble_4"></div>
+        </div>
+    </div>
+    <div class="main_form_block">
+        <form class="class_form" action=>
+            <fieldset>
+                <legend align="center">Подача заявки на вступления в ряды хомяков</legend>
+                <div class="input_area">
+                    <label for="form_name" class="above_input">Имя:</label>
+                    <input id="form_name" type="text" name="name" required title="Имя">
+                </div>
+                <div class="input_area">
+                    <label for="form_surname" class="above_input">Фамилия:</label>
+                    <input id="form_surname" type="text" name="surname" required title="Фамилия">
+                </div>
+                <div class="input_area">
+                    <label for="form_email" class="above_input">e-mail:</label>
+                    <input id="form_email" type="email" name="email" required placeholder="example@example.com">
+                </div>
+                <div class="input_area form_radio">
+                    <div class="above_input">Пол:</div>
+                    <input id="form_sex_men" type="radio" name="sex" required checked title="Мужской">
+                    <label for="form_sex_men" style="margin-right: 100px">Мужской</label>
+                    <input id="form_sex_women" type="radio" name="sex" required title="Женский">
+                    <label for="form_sex_women">Женский</label>
+                </div>
+                <div class="input_area">
+                    <label for="form_description" class="above_input">О вас:</label>
+                    <textarea id="form_description" name="description" required placeholder="Напиши о себе в двух словах"></textarea>
+                </div>
+                <div class="input_area">
+                    <label for="form_submit" class="above_input">Вы готовы?</label>
+                    <input id="form_submit" type="submit" name="submit" value="Я готов!">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

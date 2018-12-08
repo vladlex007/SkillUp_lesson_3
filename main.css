@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    text-shadow: 0 0 3px black;
+}
+html,
+body {
+    min-height: 100%;
+    position: relative;
+}
+::placeholder {
+    color: white;
+    font-size: 12pt;
+}
+ul,
+ol {
+    font-style: italic;
+}
+li {
+    padding: 5px;
+}
+.home_work_ol {
+    margin: auto;
+    color: white;
+}
+h1,h3 {
+    color: white;
+}
+.main_block_of_table {
+    display: flex;
+}
+body {
+    margin: 0;
+    background: url(./background.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.above_bubbles {
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.background_bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bubble_all {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px 10px white;
+    filter: blur(2px);
+    opacity: .2;
+}
+#bubble_1 {
+    left: -20px;
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: #FFEB3B;
+}
+#bubble_2 {
+    top: 150px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #3F51B5;
+}
+#bubble_3 {
+    top: 0;
+    right: 600px;
+    width: 300px;
+    height: 300px;
+    background-color: #FF5722;
+}
+#bubble_4 {
+    top: 500px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background-color: #FF5722;
+}
+.main_form_block {
+    position: relative;
+    display: flex;
+    margin: 100px 0 100px 0;
+}
+.class_form {
+    margin: auto;
+}
+.input_area {
+    position: relative;
+}
+.above_input {
+    position: absolute;
+    color: white;
+    font-size: 18pt;
+    cursor: pointer;
+}
+input,
+textarea{
+    width: 100%;
+    font-size: 24pt;
+    background: initial;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0 20px 0;
+    cursor: pointer;
+}
+fieldset {
+    border: 2px white dashed;
+}
+legend {
+    font-size: 18pt;
+    color: white;
+}
+#form_sex_men,
+#form_sex_women {
+    width: inherit;
+}
+.form_radio {
+    text-align: center;
+    color: white;
+    font-size: 18pt;
+}
+.form_radio label {
+    cursor: pointer;
+}
